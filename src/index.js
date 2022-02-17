@@ -19,3 +19,15 @@ const toDos = [
   },
 ];
 
+const displayList = () => {
+  const listItems = document.querySelector('.list-items');
+  toDos.sort((a, b) => a.index - b.index);
+  toDos.forEach((toDo) => {
+    const div = document.createElement('div');
+    div.classList.add('list-item');
+    div.innerHTML = `<input type="checkbox">${toDo.description}<span>
+    <i class="fas fa-ellipsis-v"></i></span>`;
+    listItems.appendChild(div);
+  });
+};
+displayList();
