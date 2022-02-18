@@ -11,6 +11,7 @@ body {
   margin: auto;
   box-shadow: 0 0 10px #888;
   padding: 0 20px;
+  background-color: rgb(248, 245, 245);
 }
 
 .list-title {
@@ -95,4 +96,6 @@ li {
   outline: none;
   border: none;
   width: 100%;
+  background-color: rgb(248, 245, 245);
+
 }
