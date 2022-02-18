@@ -50,7 +50,26 @@ span i {
 
 .list-item {
   border-bottom: 1px solid #cfc9c9f2;
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
   font-size: 1.2rem;
   opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#des{
+  display: flex;
+  align-items: center;
+}
+
+#input{
+  width: 95%;
+  height: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 1;
+  outline: none;
+  border:none;
+  margin-left: 1rem;
 }
