@@ -9,13 +9,20 @@
 
 ## Built With
 
-- HTML
-- JavaScript
+- Major languages: 
+    HTML 
+    CSS 
+    JavaScript
+
+- Frameworks: 
+     None
+
+- Technologies used: 
+     Use of webpack and ES6 syntax.
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://chukwuebukaVictor.github.io/list-structure/)
-
+[Live Demo Link](https://chukwuebukavictor.github.io/Todo_List/dist)
 ## Getting Started
 
 **Follow the steps below to run this project on you local machine**

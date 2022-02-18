@@ -1,10 +1,10 @@
 import './style.css';
 
 import ToDo from './modules/todo.js';
-import addtoList from './modules/addToUI.js';
+import addToList from './modules/addToUI.js';
 import add from './modules/add.js';
 
-// On Window load
+// //On Window load
 const list = JSON.parse(localStorage.getItem('todoList'));
 if (list) {
   list.forEach((item) => new ToDo(item.description, item.complete));
@@ -14,4 +14,5 @@ if (list) {
 const addInput = document.getElementById('add-input');
 addInput.addEventListener('keydown', add);
 
-addtoList();
+addToList();
+

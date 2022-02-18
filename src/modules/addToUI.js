@@ -1,6 +1,6 @@
 import ToDo from './todo.js';
 // Add items to UI
-const addtoList = () => {
+const addToList = () => {
   const todoList = document.getElementById('todo-list');
   todoList.innerHTML = '';
 
@@ -32,13 +32,13 @@ const addtoList = () => {
       localStorage.setItem('todoList', JSON.stringify(ToDo.list));
     });
 
-    textInput.addEventListener('keydown', (e) => {
-      text.innerHTML = textInput.value;
+    text.addEventListener('input', (e) => {
+      text.value = e.target.value;
       const index = parseInt(listItem.id, 10);
-      ToDo.list[index].description = text.innerHTML;
+      ToDo.list[index].description = e.target.value;
       localStorage.setItem('todoList', JSON.stringify(ToDo.list));
       if (e.code === 'Enter') {
-        text.style.display = 'block';
+        // text.style.display = 'block';
         textInput.classList.toggle('edit-item');
       }
     });
@@ -49,7 +49,7 @@ const addtoList = () => {
       ToDo.list = ToDo.list.filter((item) => item !== ToDo.list[index]);
       ToDo.list.forEach((item, i) => { item.index = i; });
       localStorage.setItem('todoList', JSON.stringify(ToDo.list));
-      addtoList();
+      addToList();
     });
 
     if (item.complete) {
@@ -59,4 +59,4 @@ const addtoList = () => {
   });
 };
 
-export default addtoList;
+export default addToList;

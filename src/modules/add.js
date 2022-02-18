@@ -1,4 +1,4 @@
-import addtoList from './addToUI.js';
+import addToList from './addToUI.js';
 import ToDo from './todo.js';
 
 function add(e) {
@@ -6,7 +6,7 @@ function add(e) {
     const newItem = new ToDo(this.value, false);
     localStorage.setItem('todoList', JSON.stringify(newItem.getList()));
     this.value = '';
-    addtoList();
+    addToList();
   }
 }
 
