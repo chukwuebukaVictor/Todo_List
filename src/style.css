@@ -1,0 +1,98 @@
+body {
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.wrapper {
+  align-items: center;
+  max-width: 50%;
+  margin: auto;
+  box-shadow: 0 0 10px #888;
+  padding: 0 20px;
+}
+
+.list-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: inherit;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.main-panel {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.add-input {
+  width: 95%;
+  border: 1px solid black;
+  font-style: italic;
+}
+
+.add-input,
+.clear-btn {
+  border: none;
+}
+
+.add-input,
+.item-container,
+.clear-btn {
+  padding: 15px;
+  border-bottom: 1px solid #b5b5b5;
+  display: flex;
+}
+
+.clear-btn {
+  color: gray;
+  font-size: 14px;
+  border: none;
+  align-self: center;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.complete {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.text-area {
+  display: none;
+}
+
+.item-container {
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.item-container span,
+.item-container textarea {
+  width: 200px;
+  flex-grow: 1;
+}
+
+.cancel-btn {
+  height: 20px;
+  width: 20px;
+  outline: none;
+  border: none;
+}
+
+.input {
+  outline: none;
+  border: none;
+  width: 100%;
+}
