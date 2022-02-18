@@ -4,18 +4,25 @@
 
 > Todo list is a webapp where user can maintain a list of their todos.
 
-<img width="563" alt="Screenshot 2022-02-09 at 2 11 20 AM" src="./src/todoshot.png">
+<img width="563" alt="Screenshot 2022-02-09 at 2 11 20 AM" src="./src/todoshoot1.png">
 
 
 ## Built With
 
-- HTML
-- JavaScript
+- Major languages: 
+    HTML 
+    CSS 
+    JavaScript
+
+- Frameworks: 
+     None
+
+- Technologies used: 
+     Use of webpack and ES6 syntax.
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://chukwuebukaVictor.github.io/list-structure/)
-
+[Live Demo Link](https://chukwuebukavictor.github.io/Todo_List/dist)
 ## Getting Started
 
 **Follow the steps below to run this project on you local machine**

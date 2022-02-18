@@ -5,8 +5,6 @@ module.exports = {
   mode: 'none',
   entry: {
     index: './src/index.js',
-    print: './src/print.js',
-    addTodo: './src/addTodo.js',
   },
 
   devtool: 'inline-source-map',
