@@ -15,4 +15,3 @@ const addInput = document.getElementById('add-input');
 addInput.addEventListener('keydown', add);
 
 addToList();
-
