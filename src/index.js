@@ -1,9 +1,9 @@
 import './style.css';
 
 import ToDo from './modules/todo.js';
-import addToList from './modules/addToUI.js';
+import addtoList from './modules/addToUI.js';
 import add from './modules/add.js';
-
+import deleteAllCompleted from './modules/clearAll.js';
 // //On Window load
 const list = JSON.parse(localStorage.getItem('todoList'));
 if (list) {
@@ -14,4 +14,7 @@ if (list) {
 const addInput = document.getElementById('add-input');
 addInput.addEventListener('keydown', add);
 
-addToList();
+const clearButton = document.getElementById('clear-btn');
+clearButton.addEventListener('click', deleteAllCompleted);
+
+addtoList();
