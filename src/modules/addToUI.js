@@ -12,9 +12,11 @@ const addToList = () => {
     listItem.innerHTML = `
     <input class="checkbox" type="checkbox">
     <input type="text" class="input" value='${item.description}'>
-    <p class="text-area">${item.description}</p>
     <button class="cancel-btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
     `;
+
+    // <p class="text-area">${item.description}</p>
+
 
     todoList.appendChild(listItem);
 
